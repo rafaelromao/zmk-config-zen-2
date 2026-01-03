@@ -1,5 +1,36 @@
 # Corne-ish Zen V2 Custom Configuration
 
+## Layer Morph Example
+
+This repo contains an example of use for the [zmk-layer-morph](https://github.com/rafaelromao/zmk-layer-morph) behavior.
+
+In the lower layer, the bottom-row index key on the left side toggles the target operating system between MacOS and Linux. This change affects the Copy and Paste macros located below C and V in the lower layer, which adjust their behavior based on the selected OS.
+
+```c
+// --------------------------------------------------------------------------------
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+// --------------------------------------------------------------------------------
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+// -----------------------------------------------------------------------------------------
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  0  | BSPC |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN  |  UP | RGT |     |Studio|
+// | SHFT |     |     | COPY|PASTE|  OS |   |     |      |     |     |     |      |
+//                    | GUI |     | SPC |   | ENT |      | ALT |
+// -----------------------------------------------------------------------------------------
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &   |  *  |  (  |  )  | BSPC |
+// | CTRL |     |     |     |     |     |   |  -  |  =   |  [  |  ]  |  \  |  `   |
+// | SHFT |     |     |     |     |     |   |  _  |  +   |  {  |  }  | "|" |  ~   |
+//                    | GUI |     | SPC |   | ENT |      | ALT |
+```
+
+## Corne-ish Zen
+
 ![Corne-ish Zen Logo](img/Zen_R3_sticker.png)
 
 **NOTE: This code is currently merged into ZMK Main.**
